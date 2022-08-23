@@ -15,16 +15,25 @@
         }
         
         form {
-            padding-top: 30px;
-            padding-bottom: 30px;
-            margin: auto;
-            backface-visibility: visible;
+            border: 3px solid black;
+            text-align: center;
+            background-color: lightblue;
+            width: 500px;
+            height: auto;
+            margin-left: 30%;
+            padding-bottom: 10px;
+        }
+        
+        #btn:hover {
+            color: rgb(252, 7, 7);
+            background-color: white;
+            border-radius: 30px;
         }
     </style>
 </head>
 
 <body>
-    <form style="border: 3px solid black;text-align: center;background-color: lightblue;width:50%;height:auto;margin-left: 20%;">
+    <form>
         <h2>-: Registration Form :-</h2>
         <label for="fname">First Name :</label>
         <input type="text" style="color: black;" id="fname" name="fname" placeholder="Your First Name"><br><br>
@@ -46,7 +55,7 @@
         <input type="radio" id="other" name="other">
         <label for="other">Other</label><br><br>
         <label for="msg">Tell us a little bit about your self ? </label><br>
-        <textarea name="msg" rows="10" cols="40">a brif description about yourself </textarea><br><br>
+        <textarea name="msg" rows="10" cols="40"> </textarea><br><br>
         <label for="lang">What is your favorite Front-end language ?</label><br>
         <select>
             <option>-:select language:-</option>
@@ -55,7 +64,7 @@
             <option>JS</option>
         </select><br><br>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" id="btn">
     </form>
 
 </body>
