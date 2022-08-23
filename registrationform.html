@@ -8,16 +8,24 @@
             border-bottom: 2px solid black; */
         }
         
+        body {
+            background-image: url('https://i.pinimg.com/originals/ee/50/de/ee50dec983d90280a90a40afbe5be29d.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
         form {
             padding-top: 30px;
             padding-bottom: 30px;
             margin: auto;
+            backface-visibility: visible;
         }
     </style>
 </head>
 
 <body>
     <form style="border: 3px solid black;text-align: center;background-color: lightblue;width:50%;height:auto;margin-left: 20%;">
+        <h2>-: Registration Form :-</h2>
         <label for="fname">First Name :</label>
         <input type="text" style="color: black;" id="fname" name="fname" placeholder="Your First Name"><br><br>
         <label for="lname">Last Name :</label>
@@ -46,6 +54,7 @@
             <option>CSS</option>
             <option>JS</option>
         </select><br><br>
+
         <input type="submit" value="Submit">
     </form>
 
